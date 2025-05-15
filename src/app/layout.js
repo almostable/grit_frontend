@@ -5,7 +5,7 @@ import DesktopBlocker from '@/components/ui/DesktopBlocker';
 import { Footer } from '@/components/layout/Footer';
 
 const geist = Geist({
-  subsets: ['latin', 'cyrillic'],
+  subsets: ['latin'],
 });
 
 export const metadata = {
