@@ -2,6 +2,7 @@ import { Geist } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
 import DesktopBlocker from '@/components/ui/DesktopBlocker';
+import { Footer } from '@/components/layout/Footer';
 
 const geist = Geist({
   subsets: ['latin', 'cyrillic'],
@@ -16,11 +17,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={`${geist.className} antialiased`}>
-        <div>
-          <DesktopBlocker>
-            <Header />
-            {children}
-          </DesktopBlocker>
+        <div className='flex flex-col min-h-screen'>
+          {/* <DesktopBlocker> */}
+          <Header />
+          {children}
+          <Footer />
+          {/* </DesktopBlocker> */}
         </div>
       </body>
     </html>

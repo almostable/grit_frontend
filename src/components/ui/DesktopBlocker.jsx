@@ -1,27 +1,22 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { isMobile } from 'react-device-detect';
 
 export default function DesktopBlocker({ children }) {
-  const [isBlocked, setIsBlocked] = useState(false);
+  if (isMobile) {
+    <>{children}</>;
+  }
 
-  useEffect(() => {
-    const isMobile = window.innerWidth <= 768;
-    setIsBlocked(!isMobile);
-  }, []);
-
-  if (isBlocked) {
-    return (
+  return (
+    <>
       <div className='flex h-screen items-center justify-center px-6 text-center'>
         <div>
           <h1 className='text-2xl font-bold'>доступно только с телефона 📱</h1>
           <p className='text-gray-500 mt-2'>
-            мы пока в разработке для десктопа
+            мы разрабатываем версию для пк, следите за новостями 🥺
           </p>
         </div>
       </div>
-    );
-  }
-
-  return <>{children}</>;
+    </>
+  );
 }

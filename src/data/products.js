@@ -1,0 +1,56 @@
+export const products = [
+  {
+    id: 'tsunami_snm100',
+    category_id: 1,
+    name: 'TSUNAMI SNM100',
+    price: 145000,
+    sizes: [
+      'S – 49 см (для роста 155–168 см)',
+      'M – 52 см (для роста 168–178 см)',
+      'L – 55 см (для роста 178–185 см)',
+      'XL – 58 см (для роста 185–195 см)',
+    ],
+    colors: [
+      'красный',
+      'фиолетовый',
+      'розовый',
+      'золото-розовый',
+      'темно-зеленый',
+      'черный',
+      'серый',
+      'белый',
+      'желтый',
+      'оранжевый',
+      'другой',
+    ],
+    colors_description: [
+      'доступно много других расцветок, которые можно будет выбрать при заказе',
+    ],
+    variations: ['Legend', 'Skeace'],
+    tires: [
+      'обода 40мм',
+      'обода 70мм',
+      'обода 90мм',
+      '3 спицевые колеса',
+      'другое',
+    ],
+    tires_description:
+      'доступны другие вариации колес, которые можно будет выбрать при заказе',
+    wheels: ['баранка', 'прямой'],
+    description: [
+      'фиксированная передача',
+      'алюминиевая рама',
+      'вес 8-9кг',
+      'комплект для фикса',
+    ],
+    images: [
+      'https://res.cloudinary.com/dtkdoiowo/image/upload/v1747219489/IMG_8326_jz68m1.jpg',
+      'https://res.cloudinary.com/dtkdoiowo/image/upload/v1747219486/IMG_8332_trilkm.jpg',
+      'https://res.cloudinary.com/dtkdoiowo/image/upload/v1747219486/IMG_8337_o0se4h.jpg',
+      'https://res.cloudinary.com/dtkdoiowo/image/upload/v1747219486/IMG_8330_iighvo.jpg',
+      'https://res.cloudinary.com/dtkdoiowo/image/upload/v1747219486/IMG_8328_dlgzez.jpg',
+      'https://res.cloudinary.com/dtkdoiowo/image/upload/v1747219486/IMG_8327_dgwml7.jpg',
+      'https://res.cloudinary.com/dtkdoiowo/image/upload/v1747219486/IMG_8338_i0dema.jpg',
+    ],
+  },
+];
