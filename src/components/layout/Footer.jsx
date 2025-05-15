@@ -23,13 +23,21 @@ export function Footer() {
           </Link>
         </div>
         <div className='flex gap-5'>
-          <a href='https://instagram.com/grit.kz/'>
+          <a
+            href='https://instagram.com/grit.kz/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <button className='flex items-center gap-1 text-sm font-medium'>
               <InstagramLogo size={20} />
               Instagram
             </button>
           </a>
-          <a href='https://wa.me/message/OG6BDAAF77YZG1'>
+          <a
+            href='https://wa.me/message/OG6BDAAF77YZG1'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <button className='flex items-center gap-1 text-sm font-medium'>
               <WhatsappLogo size={20} />
               WhatsApp

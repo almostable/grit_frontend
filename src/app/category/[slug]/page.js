@@ -18,7 +18,7 @@ export default async function CategoryPage({ params }) {
     <div>
       {/* категории */}
       <div className='mt-5 overflow-auto scrollbar-none'>
-        <CategoryButtons data={categories.filter((cat) => cat.slug !== slug)} />
+        <CategoryButtons data={categories} activeSlug={slug} />
       </div>
       <div className='px-5 mt-5'>
         <h1 className='text-2xl font-medium'>{category.name}</h1>

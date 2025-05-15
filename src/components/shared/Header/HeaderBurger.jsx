@@ -50,7 +50,11 @@ export function HeaderBurger({ nav }) {
             </ul>
           </div>
           <div className='flex gap-2'>
-            <a href='https://instagram.com/grit.kz/'>
+            <a
+              href='https://instagram.com/grit.kz/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <Button size='icon' className='bg-black'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -63,7 +67,11 @@ export function HeaderBurger({ nav }) {
                 </svg>
               </Button>
             </a>
-            <a href='https://wa.me/message/OG6BDAAF77YZG1'>
+            <a
+              href='https://wa.me/message/OG6BDAAF77YZG1'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <Button size='icon' className='bg-black'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'

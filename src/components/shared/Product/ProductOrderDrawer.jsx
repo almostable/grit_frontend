@@ -106,6 +106,8 @@ export function ProductOrderDrawer({
                   tire: selectedTire,
                   wheels: selectedWheels,
                 })}
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 <Button className='w-full py-6'>
                   <WhatsappLogo size={21} /> перейти в whatsapp

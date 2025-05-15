@@ -1,5 +1,7 @@
 'use client';
 
+import { Button } from '@/components/ui/Button';
+import { Forward } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 export const ProductOrderButton = ({ state, mode = 'inplace', onClick }) => {
@@ -40,13 +42,14 @@ export const ProductOrderButton = ({ state, mode = 'inplace', onClick }) => {
 
   return (
     <>
-      <button
+      <Button
         onClick={onClick}
         disabled={state}
-        className={`${baseClasses} ${variantClasses}`}
+        className={`${baseClasses} ${variantClasses} py-6`}
       >
+        <Forward size={21} />
         заказать
-      </button>
+      </Button>
     </>
   );
 };
