@@ -26,7 +26,7 @@ export const metadata = {
     siteName: 'grit.kz',
     images: [
       {
-        url: '/gritpreview.png',
+        url: '/og_image.jpg',
         width: 1200,
         height: 630,
         alt: 'grit.kz — preview',
