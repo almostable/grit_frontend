@@ -44,11 +44,11 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${geist.className} antialiased`}>
         <div className='flex flex-col min-h-screen'>
-          {/* <DesktopBlocker> */}
-          <Header />
-          {children}
-          <Footer />
-          {/* </DesktopBlocker> */}
+          <DesktopBlocker>
+            <Header />
+            {children}
+            <Footer />
+          </DesktopBlocker>
         </div>
       </body>
     </html>
