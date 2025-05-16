@@ -26,7 +26,7 @@ export const metadata = {
     siteName: 'grit.kz',
     images: [
       {
-        url: '/og_image.jpg',
+        url: 'https://res.cloudinary.com/dtkdoiowo/image/upload/v1747399670/og_image_emqxgr.jpg',
         width: 1200,
         height: 630,
         alt: 'grit.kz — preview',
