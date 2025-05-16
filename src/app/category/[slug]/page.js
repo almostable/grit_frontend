@@ -5,6 +5,33 @@ import { products } from '@/data/products';
 import { MoveLeft } from 'lucide-react';
 import Link from 'next/link';
 
+export const dynamic = 'force-static';
+
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+
+  const category = categories.find((cat) => cat.slug === slug);
+
+  if (!category) {
+    return {
+      title: 'категория не найдена',
+      description: 'извините, такой категории не существует',
+      robots: 'noindex, nofollow',
+    };
+  }
+
+  return {
+    title: `${category.name} — ассортимент фиксов`,
+    description: category.description.slice(0, 160),
+    openGraph: {
+      title: category.name,
+      description: category.description,
+      url: `https://grit.kz/category/${slug}`,
+      siteName: 'grit.kz — магазин фиксов и другого',
+    },
+  };
+}
+
 export default async function CategoryPage({ params }) {
   const { slug } = await params;
 

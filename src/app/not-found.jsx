@@ -1,6 +1,12 @@
 import { MoveLeft } from 'lucide-react';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'страница не найдена',
+  description: 'к сожалению такой страницы не существует',
+  robots: 'noindex, nofollow',
+};
+
 export default function NotFound() {
   return (
     <div className='flex flex-col gap-3 px-5 mt-5'>

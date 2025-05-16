@@ -5,6 +5,8 @@ import { ProductCard } from '@/components/shared/Index/ProductCard';
 import { categories } from '@/data/categories';
 import { products } from '@/data/products';
 
+export const dynamic = 'force-static';
+
 export default function Home() {
   return (
     <div>

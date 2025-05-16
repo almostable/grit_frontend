@@ -4,6 +4,14 @@ import { faqAccordions } from '@/data/accordions/faq_accordions';
 import { MoveLeft } from 'lucide-react';
 import Link from 'next/link';
 
+export const dynamic = 'force-static';
+
+export const metadata = {
+  title: 'FAQ — часто задаваемые вопросы',
+  description: 'ответы на часто задаваемые вопросы',
+  robots: 'index, follow',
+};
+
 export default function FaqPage() {
   return (
     <div className='flex flex-col gap-2 px-5 mt-5'>
