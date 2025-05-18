@@ -3,6 +3,8 @@ import './globals.css';
 import { Header } from '@/components/layout/Header';
 import DesktopBlocker from '@/components/ui/DesktopBlocker';
 import { Footer } from '@/components/layout/Footer';
+import GoogleAnalytics from '@/components/shared/Analytics/GoogleAnalytics';
+import YandexMetrika from '@/components/shared/Analytics/YandexMetrika';
 
 const geist = Geist({
   subsets: ['latin'],
@@ -40,6 +42,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <head>
+        <GoogleAnalytics />
+        <YandexMetrika />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </head>
       <body className={`${geist.className} antialiased`}>
