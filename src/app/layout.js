@@ -36,6 +36,9 @@ export const metadata = {
     ],
     type: 'website',
   },
+  other: {
+    ['yandex-verification']: '67ef0dff0b5b5115',
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -44,7 +47,6 @@ export default function RootLayout({ children }) {
       <head>
         <GoogleAnalytics />
         <YandexMetrika />
-        <meta name='yandex-verification' content='67ef0dff0b5b5115' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </head>
       <body className={`${geist.className} antialiased`}>
