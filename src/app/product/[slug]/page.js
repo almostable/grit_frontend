@@ -22,7 +22,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: product.name,
       description: product.description,
-      url: `https://www.weel.kz/product/${slug}`,
+      url: `https://weel.kz/product/${slug}`,
       images: [product?.images[0]],
       siteName: 'weel.kz — магазин фиксов и другого',
     },

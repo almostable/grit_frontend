@@ -11,7 +11,7 @@ const geist = Geist({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://www.weel.kz'),
+  metadataBase: new URL('https://weel.kz'),
   title: {
     default: 'weel.kz — все про фиксы и многое',
     template: '%s в weel.kz',
@@ -24,7 +24,7 @@ export const metadata = {
   openGraph: {
     title: 'weel.kz',
     description: 'Лучшие фиксы и многое в weel.kz',
-    url: 'https://www.weel.kz',
+    url: 'https://weel.kz',
     siteName: 'weel.kz',
     images: [
       {

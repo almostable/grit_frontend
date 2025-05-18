@@ -3,5 +3,5 @@ Allow: /
 
 Disallow: /privacy/
 
-Sitemap: https://www.weel.kz/sitemap.xml
-Host: https://www.weel.kz
+Sitemap: https://weel.kz/sitemap.xml
+Host: https://weel.kz

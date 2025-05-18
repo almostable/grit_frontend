@@ -2,7 +2,7 @@ import { categories } from '@/data/categories';
 import { products } from '@/data/products';
 
 export async function GET() {
-  const baseUrl = 'https://www.weel.kz';
+  const baseUrl = 'https://weel.kz';
 
   // Статичные страницы
   const staticPages = ['', 'faq', 'privacy'];
