@@ -8,7 +8,7 @@ export function ProductImageCarousel({ data, alt, onClick }) {
       onClick={onClick}
       className='flex w-full gap-2 overflow-x-auto scroll-snap-type-x'
     >
-      {data.map((image, index) => (
+      {data?.map((image, index) => (
         <div
           key={index}
           className='flex snap-start min-w-screen h-[400px] relative'

@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 export function ProductCard({ data }) {
   if (!data) return <p>ничего не найдено...</p>;
+
   return (
     <>
       {data?.map((i) => (
@@ -13,21 +14,30 @@ export function ProductCard({ data }) {
           <Link href={`/product/${i.id}`}>
             <div className='flex flex-col gap-3 w-full'>
               <div className='w-full'>
-                <Image
-                  src={i.images[0]}
-                  priority={false}
-                  loading='lazy'
-                  width={165}
-                  height={165}
-                  quality={50}
-                  alt={i.name}
-                  className='rounded-md object-cover w-full max-w-full h-[190px]'
-                />
+                {i?.images?.length > 0 && (
+                  <Image
+                    src={i?.images[0]}
+                    priority={false}
+                    loading='lazy'
+                    width={165}
+                    height={165}
+                    quality={50}
+                    alt={i.name}
+                    className='rounded-md object-cover w-full max-w-full h-[190px]'
+                  />
+                )}
               </div>
               <div className='flex flex-col'>
-                <p className='font-medium'>
-                  {i.price.toLocaleString('ru-RU')} ₸
-                </p>
+                <div className='flex flex-nowrap items-baseline gap-1 gap-y-0 whitespace-nowrap overflow-hidden'>
+                  <p className='font-medium'>
+                    от {i?.price?.toLocaleString('ru-RU')} ₸
+                  </p>
+                  {i?.old_price && (
+                    <p className='text-xs text-neutral-500 line-through'>
+                      {i?.old_price?.toLocaleString('ru-RU')} ₸
+                    </p>
+                  )}
+                </div>
                 <p className='text-sm text-neutral-500'>{i.name}</p>
               </div>
             </div>

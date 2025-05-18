@@ -31,22 +31,25 @@ export default function Home() {
           <p className='font-medium text-2xl'>почему мы?</p>
           <div className='flex flex-col gap-2'>
             <div className='flex flex-col gap-0.5 p-4 border border-neutral-300 rounded-md'>
-              <p className='font-medium leading-5'>💸 цены без накруток</p>
+              <p className='font-medium leading-5'>💸 разумная цена</p>
               <p className='text-sm text-neutral-500'>
-                не арендуем офисы, не платим складам и маркетологам — ты платишь
-                только за сам велик.
+                не экономим, а продумываем: благодаря логистике и отбору — фикс,
+                который реально стоит своих денег
               </p>
             </div>
             <div className='flex flex-col gap-0.5 p-4 border border-neutral-300 rounded-md'>
-              <p className='font-medium leading-5'>🔍 отбираем</p>
+              <p className='font-medium leading-5'>
+                ✅ контроль на каждом этапе
+              </p>
               <p className='text-sm text-neutral-500'>
-                по отзывам, характеристикам и без откровенного хлама.
+                следим за фиксом с момента заказа — проверяем состояние,
+                упаковку, доставку
               </p>
             </div>
             <div className='flex flex-col gap-0.5 p-4 border border-neutral-300 rounded-md'>
               <p className='font-medium leading-5'>📦 дальше — лучше</p>
               <p className='text-sm text-neutral-500'>
-                сейчас предзаказ, но скоро будет наличие и быстрая доставка.
+                сейчас предзаказ, но скоро будет наличие и быстрая доставка
               </p>
             </div>
           </div>

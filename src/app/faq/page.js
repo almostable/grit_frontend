@@ -8,7 +8,7 @@ export const dynamic = 'force-static';
 
 export const metadata = {
   title: 'FAQ — часто задаваемые вопросы',
-  description: 'ответы на часто задаваемые вопросы',
+  description: 'Ответы на часто задаваемые вопросы',
   robots: 'index, follow',
 };
 

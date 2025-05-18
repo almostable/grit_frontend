@@ -40,6 +40,8 @@ export default function ProductPage() {
 
   const product = products.find((product) => product.id === slug);
 
+  const roundedPrepay = ((product.price * 0.8) / 1000) * 1000;
+
   if (!product) return <p>продукт не найден...</p>;
 
   return (
@@ -73,18 +75,18 @@ export default function ProductPage() {
 
         {/* контент */}
         <div className='flex flex-col'>
-          {product.images.map((image, index) => (
+          {product?.images?.map((image, index) => (
             <div key={index} className='relative w-full max-h-[400px]'>
               <Image
                 src={image}
                 width={800}
                 height={400}
-                loading='lazy'
+                loading={index === 0 ? 'eager' : 'lazy'}
                 alt={product.name}
-                className='w-full h-auto object-contain'
+                className='w-full max-h-[400px] object-contain'
               />
               <div className='absolute bottom-3 right-3 opacity-30'>
-                <GritLogo size={35} />
+                <GritLogo size={50} />
               </div>
             </div>
           ))}
@@ -99,76 +101,95 @@ export default function ProductPage() {
 
         {/* Цена */}
         <div className='flex flex-col'>
-          <ProductPrice data={product.price} />
-          <p className='text-sm text-neutral-500'>
-            * — предоплата от {(product.price * 0.8).toLocaleString('ru-RU')} ₸
+          <ProductPrice data={product.price} old={product?.old_price} />
+          <p className='text-sm text-blue-600'>
+            * — предоплата от {roundedPrepay.toLocaleString('ru-RU')} ₸
           </p>
         </div>
 
         {/* Разное */}
         <div className='flex flex-col gap-6 mt-6'>
           {/* Цвет */}
-          <div className='flex flex-col gap-2'>
-            <ProductOptions
-              label='цвет'
-              stateValue={selectedColor}
-              setStateValue={setSelectedColor}
-              data={product.colors}
-            />
-            <p className='text-neutral-500 text-[12px]'>
-              {product.colors_description}
-            </p>
-          </div>
+          {product?.colors?.length > 0 && (
+            <div className='flex flex-col gap-2'>
+              <ProductOptions
+                label='цвет'
+                stateValue={selectedColor}
+                setStateValue={setSelectedColor}
+                data={product.colors}
+              />
+              {product?.colors_description && (
+                <p className='text-neutral-500 text-[12px]'>
+                  {product.colors_description}
+                </p>
+              )}
+            </div>
+          )}
 
           {/* Размер */}
-          <div className='flex flex-col gap-2'>
-            <ProductOptions
-              label='размер рамы'
-              stateValue={selectedSize}
-              setStateValue={setSelectedSize}
-              data={product.sizes}
-            />
-          </div>
+          {product?.sizes?.length > 0 && (
+            <div className='flex flex-col gap-2'>
+              <ProductOptions
+                label='размер рамы'
+                stateValue={selectedSize}
+                setStateValue={setSelectedSize}
+                data={product.sizes}
+              />
+            </div>
+          )}
 
           {/* Шатуны */}
-          <div className='flex flex-col gap-2'>
-            <ProductOptions
-              label='шатуны'
-              stateValue={selectedVariation}
-              setStateValue={setSelectedVariation}
-              data={product.variations}
-            />
-          </div>
+          {product?.variations?.length > 0 && (
+            <div className='flex flex-col gap-2'>
+              <ProductOptions
+                label='шатуны'
+                stateValue={selectedVariation}
+                setStateValue={setSelectedVariation}
+                data={product.variations}
+              />
+            </div>
+          )}
 
           {/* Колеса */}
-          <div className='flex flex-col gap-2'>
-            <ProductOptions
-              label='колеса'
-              stateValue={selectedTire}
-              setStateValue={setSelectedTire}
-              data={product.tires}
-            />
-            <p className='text-neutral-500 text-[12px]'>
-              {product.tires_description}
-            </p>
-          </div>
+          {product?.tires?.length > 0 && (
+            <div className='flex flex-col gap-2'>
+              <ProductOptions
+                label='колеса'
+                stateValue={selectedTire}
+                setStateValue={setSelectedTire}
+                data={product.tires}
+              />
+              {product?.tires_description && (
+                <p className='text-neutral-500 text-[12px]'>
+                  {product.tires_description}
+                </p>
+              )}
+            </div>
+          )}
 
           {/* Руль */}
-          <div className='flex flex-col gap-2'>
-            <ProductOptions
-              label='руль'
-              stateValue={selectedWheels}
-              setStateValue={setSelectedWheels}
-              data={product.wheels}
-            />
-          </div>
+          {product?.wheels?.length > 0 && (
+            <div className='flex flex-col gap-2'>
+              <ProductOptions
+                label='руль'
+                stateValue={selectedWheels}
+                setStateValue={setSelectedWheels}
+                data={product.wheels}
+              />
+              {product?.wheels_description && (
+                <p className='text-neutral-500 text-[12px]'>
+                  {product.wheels_description}
+                </p>
+              )}
+            </div>
+          )}
           <div>
             {/* Accordions */}
             <ReusableAccordionTemplate>
               {/* Характеристики */}
               <ReusableAccordionItem
                 index={product.id}
-                content={product.description.map((desc, index) => (
+                content={product?.description?.map((desc, index) => (
                   <p key={index}>• {desc}</p>
                 ))}
               />

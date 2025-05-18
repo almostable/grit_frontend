@@ -4,8 +4,8 @@ import Link from 'next/link';
 export const dynamic = 'force-static';
 
 export const metadata = {
-  title: 'политика приватности',
-  description: 'то как мы ценим вашу приватность',
+  title: 'Политика приватности',
+  description: 'То как мы ценим вашу приватность',
   robots: 'noindex, nofollow',
 };
 

@@ -6,7 +6,7 @@ import { WhatsappLogo } from '../ui/logo/WhatsappLogo';
 export function Footer() {
   return (
     <div className='mt-auto'>
-      <div className='flex flex-col gap-6 mt-9 px-5 py-6 bg-black text-white'>
+      <div className='flex flex-col gap-6 mt-9 px-5 py-9 bg-black text-white'>
         <GritLogo />
         <div className='flex flex-col gap-2'>
           <Link href='/faq' className=' text-sm text-neutral-400'>
@@ -24,7 +24,7 @@ export function Footer() {
         </div>
         <div className='flex gap-5'>
           <a
-            href='https://instagram.com/grit.kz/'
+            href='https://instagram.com/weel_kz/'
             target='_blank'
             rel='noopener noreferrer'
           >

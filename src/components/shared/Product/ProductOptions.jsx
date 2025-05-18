@@ -13,7 +13,7 @@ export function ProductOptions({ label, data, stateValue, setStateValue }) {
           <option value='' disabled hidden>
             выбор
           </option>
-          {data.map((item, index) => (
+          {data?.map((item, index) => (
             <option key={index} value={item}>
               {item}
             </option>

@@ -3,6 +3,8 @@ import { HeaderBurger } from '../shared/Header/HeaderBurger';
 import { GritLogo } from '../ui/GritLogo';
 import Link from 'next/link';
 import { categories } from '@/data/categories';
+import { WhatsappLogo } from '../ui/logo/WhatsappLogo';
+import { Button } from '../ui/Button';
 
 export function Header() {
   return (
@@ -14,10 +16,18 @@ export function Header() {
           </Link>
         ))}
       />
-      <Link href='/'>
-        <GritLogo />
+      <Link href='/' className='text-black'>
+        <GritLogo size={65} />
       </Link>
-      <Search size={27} />
+      <a
+        href='https://wa.me/message/OG6BDAAF77YZG1'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        <Button size='icon' className='size-9 bg-black text-white'>
+          <WhatsappLogo size={20} />
+        </Button>
+      </a>
     </div>
   );
 }

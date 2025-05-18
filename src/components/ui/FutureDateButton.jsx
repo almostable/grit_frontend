@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-export function FutureDateButton({ offsetDays = 10 }) {
+export function FutureDateButton({ offsetDays = 13 }) {
   const [dateLabel, setDateLabel] = useState('');
 
   // Месяцы в родительном падеже

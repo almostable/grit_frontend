@@ -51,7 +51,7 @@ export function HeaderBurger({ nav }) {
           </div>
           <div className='flex gap-2'>
             <a
-              href='https://instagram.com/grit.kz/'
+              href='https://instagram.com/weel_kz/'
               target='_blank'
               rel='noopener noreferrer'
             >

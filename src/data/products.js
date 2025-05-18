@@ -3,7 +3,8 @@ export const products = [
     id: 'tsunami_snm100',
     category_id: 1,
     name: 'TSUNAMI SNM100',
-    price: 145000,
+    price: 139000,
+    old_price: 143000,
     sizes: [
       'S – 49 см (для роста 155–168 см)',
       'M – 52 см (для роста 168–178 см)',
@@ -21,18 +22,19 @@ export const products = [
       'белый',
       'желтый',
       'оранжевый',
-      'другой',
+      'другой (на выбор)',
     ],
     colors_description: [
       'доступно много других расцветок, которые можно будет выбрать при заказе',
     ],
     variations: ['Legend', 'Skeace'],
     tires: [
+      'обода 30мм',
       'обода 40мм',
       'обода 70мм',
       'обода 90мм',
       '3 спицевые колеса',
-      'другое',
+      'другие (на выбор)',
     ],
     tires_description:
       'доступны другие вариации колес, которые можно будет выбрать при заказе',
@@ -51,6 +53,43 @@ export const products = [
       'https://res.cloudinary.com/dtkdoiowo/image/upload/v1747219486/IMG_8328_dlgzez.jpg',
       'https://res.cloudinary.com/dtkdoiowo/image/upload/v1747219486/IMG_8327_dgwml7.jpg',
       'https://res.cloudinary.com/dtkdoiowo/image/upload/v1747219486/IMG_8338_i0dema.jpg',
+    ],
+  },
+  {
+    id: 'gray_f15',
+    category_id: 1,
+    name: 'GRAY F15',
+    price: 142000,
+    sizes: [
+      'S – 48 см (для роста 158–170 см)',
+      'M – 52 см (для роста 170–178 см)',
+      'L – 56 см (для роста 178–190 см)',
+    ],
+    colors: ['черный', 'белый', 'розовый', 'тёмно-синий хамелеон'],
+    tires: [
+      'обода 40мм',
+      'обода 70мм',
+      'обода 90мм',
+      '3 спицевые колеса',
+      'другие (на выбор)',
+    ],
+    tires_description:
+      'доступны другие вариации колес, которые можно будет выбрать при заказе',
+    wheels: ['баранка', 'прямой', 'булхорн', 'другой (на выбор)'],
+    wheels_description: [
+      'доступны другие вариации руля, которые можно будет выбрать при заказе',
+    ],
+    description: [
+      'фиксированная передача',
+      'алюминиевая рама',
+      'вес 9-10кг',
+      'комплект для фикса',
+    ],
+    images: [
+      'https://res.cloudinary.com/dtkdoiowo/image/upload/v1747562433/1d5e6ace-a9c4-44d4-b4cb-ad758c291c62_iqgmqu.jpg',
+      'https://res.cloudinary.com/dtkdoiowo/image/upload/v1747562433/5b844930-6860-43cf-93ca-01ca92286b0f_n4aq1u.jpg',
+      'https://res.cloudinary.com/dtkdoiowo/image/upload/v1747562433/3c8758cd-0b3c-41b1-8845-ff5606392976_o5pj4r.jpg',
+      'https://res.cloudinary.com/dtkdoiowo/image/upload/v1747562434/2412dc60-dd4c-4bcd-9092-7c0f5abbb562_erc38w.jpg',
     ],
   },
 ];

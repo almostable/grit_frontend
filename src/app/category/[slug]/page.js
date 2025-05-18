@@ -14,8 +14,8 @@ export async function generateMetadata({ params }) {
 
   if (!category) {
     return {
-      title: 'категория не найдена',
-      description: 'извините, такой категории не существует',
+      title: 'Категория не найдена',
+      description: 'Извините, такой категории не существует',
       robots: 'noindex, nofollow',
     };
   }
@@ -26,8 +26,8 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: category.name,
       description: category.description,
-      url: `https://grit.kz/category/${slug}`,
-      siteName: 'grit.kz — магазин фиксов и другого',
+      url: `https://weel.kz/category/${slug}`,
+      siteName: 'weel.kz — магазин фиксов и другого',
     },
   };
 }
