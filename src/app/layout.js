@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
       <head>
         <GoogleAnalytics />
         <YandexMetrika />
-        <meta name='yandex-verification' content='d04c87f21e74dcc3' />
+        <meta name='yandex-verification' content='67ef0dff0b5b5115' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </head>
       <body className={`${geist.className} antialiased`}>
