@@ -102,7 +102,7 @@ export default function ProductPage() {
         {/* Цена */}
         <div className='flex flex-col'>
           <ProductPrice data={product.price} old={product?.old_price} />
-          <p className='text-sm text-blue-600'>
+          <p className='text-sm text-blue-500'>
             * — предоплата от {roundedPrepay.toLocaleString('ru-RU')} ₸
           </p>
         </div>

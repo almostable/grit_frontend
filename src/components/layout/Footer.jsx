@@ -19,7 +19,7 @@ export function Footer() {
             возврат
           </Link>
           <Link href='/privacy' className=' text-sm text-neutral-400'>
-            приватность
+            политика
           </Link>
         </div>
         <div className='flex gap-5'>

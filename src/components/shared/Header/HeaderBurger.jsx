@@ -47,6 +47,9 @@ export function HeaderBurger({ nav }) {
               <Link onClick={handleNavClick} href='/faq'>
                 <li>возврат</li>
               </Link>
+              <Link onClick={handleNavClick} href='/privacy'>
+                <li>политика</li>
+              </Link>
             </ul>
           </div>
           <div className='flex gap-2'>
