@@ -13,7 +13,7 @@ export function ProductImageCarousel({ data, alt, onClick }) {
           key={index}
           className='flex snap-start min-w-screen h-[400px] relative'
         >
-          <div className='absolute inset-0 bg-neutral-100 animate-pulse z-0 rounded-lg' />
+          <div className='absolute inset-0 bg-neutral-500 animate-pulse z-0' />
           <Image
             src={image}
             width={800}
