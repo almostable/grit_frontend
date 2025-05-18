@@ -19,7 +19,7 @@ export default function Home() {
       <div className='px-5 mt-5'>
         {/* заголовок */}
         <div className='mb-2'>
-          <p className='font-medium text-2xl'>новинки</p>
+          <h1 className='font-medium text-2xl'>новинки</h1>
         </div>
 
         {/* товары */}

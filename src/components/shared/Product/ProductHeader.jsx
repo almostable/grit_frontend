@@ -7,7 +7,7 @@ import { CirclePercent } from 'lucide-react';
 export function ProductHeader({ data }) {
   return (
     <>
-      <p className='text-xl font-medium'>{data}</p>
+      <h1 className='text-xl font-medium'>{data}</h1>
       <div className='flex gap-1.5'>
         <div className='flex gap-1 max-w-fit px-2 py-1 items-center text-xs bg-emerald-500/20 text-emerald-500 rounded-md'>
           <TruckLogo size={17} />
