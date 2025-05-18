@@ -37,7 +37,7 @@ export const metadata = {
     type: 'website',
   },
   other: {
-    ['yandex-verification']: '67ef0dff0b5b5115',
+    ['yandex-verification']: 'd04c87f21e74dcc3',
   },
 };
 
