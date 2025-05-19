@@ -25,31 +25,27 @@ export function HeaderBurger({ nav }) {
         <Menu size={26} />
       </DrawerTrigger>
       <DrawerContent>
-        <div className='flex flex-col gap-8 px-5 pt-5 pb-7'>
+        <div className='flex flex-col gap-5 px-5 pt-5 pb-7'>
           <div>
-            <ul className='flex flex-col gap-3 text-3xl font-semibold'>
+            <ul className='flex flex-col gap-1 text-[26px] font-semibold text-neutral-800'>
               <li onClick={handleNavClick}>
-                <Link href='/'>главная</Link>
+                <Link href='/'>Главная</Link>
               </li>
               {React.Children.map(nav, (navItem) => (
                 <li onClick={handleNavClick}>{navItem}</li>
               ))}
-            </ul>
-          </div>
-          <div>
-            <ul className='flex flex-col gap-3 text-lg'>
-              <Link onClick={handleNavClick} href='/faq'>
-                <li>вопрос — ответ</li>
-              </Link>
-              <Link onClick={handleNavClick} href='/faq'>
-                <li>доставка</li>
-              </Link>
-              <Link onClick={handleNavClick} href='/faq'>
-                <li>возврат</li>
-              </Link>
-              <Link onClick={handleNavClick} href='/privacy'>
-                <li>политика</li>
-              </Link>
+              <li onClick={handleNavClick}>
+                <Link href='/faq'>Доставка</Link>
+              </li>
+              <li onClick={handleNavClick}>
+                <Link href='/faq'>Возврат</Link>
+              </li>
+              <li onClick={handleNavClick}>
+                <Link href='/faq'>Чаво</Link>
+              </li>
+              <li onClick={handleNavClick}>
+                <Link href='/privacy'>Политика</Link>
+              </li>
             </ul>
           </div>
           <div className='flex gap-2'>
@@ -58,7 +54,7 @@ export function HeaderBurger({ nav }) {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <Button size='icon' className='bg-black'>
+              <Button size='icon' className='bg-neutral-800'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 24 24'
@@ -75,7 +71,7 @@ export function HeaderBurger({ nav }) {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <Button size='icon' className='bg-black'>
+              <Button size='icon' className='bg-neutral-800'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 24 24'

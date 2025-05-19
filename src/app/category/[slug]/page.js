@@ -48,7 +48,6 @@ export default async function CategoryPage({ params }) {
         <CategoryButtons data={categories} activeSlug={slug} />
       </div>
       <div className='px-5 mt-5'>
-        <h1 className='text-2xl font-medium'>{category.name}</h1>
         <div className='mt-2'>
           {filteredProducts.length === 0 ? (
             <>

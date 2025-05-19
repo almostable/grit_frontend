@@ -8,7 +8,7 @@ import { Button } from '../ui/Button';
 
 export function Header() {
   return (
-    <div className='flex justify-between items-center px-5 py-3 border-b border-b-neutral-200'>
+    <div className='fixed w-full flex justify-between items-center px-5 py-3 bg-white/80 backdrop-blur-xs border-b-neutral-200'>
       <HeaderBurger
         nav={categories.map((cat) => (
           <Link key={cat.id} href={`/category/${cat.slug}`}>
@@ -17,16 +17,15 @@ export function Header() {
         ))}
       />
       <Link href='/' className='text-black'>
-        <GritLogo size={65} />
+        <GritLogo size={59} />
       </Link>
       <a
         href='https://wa.me/message/OG6BDAAF77YZG1'
         target='_blank'
         rel='noopener noreferrer'
+        className=''
       >
-        <Button size='icon' className='size-9 bg-black text-white'>
-          <WhatsappLogo size={20} />
-        </Button>
+        <WhatsappLogo size={24} />
       </a>
     </div>
   );

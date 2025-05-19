@@ -13,7 +13,7 @@ export const ProductOrderButton = ({ state, mode = 'inplace', onClick }) => {
       const windowHeight = window.innerHeight;
       const fullHeight = document.body.scrollHeight;
 
-      if (scrollY + windowHeight >= fullHeight - 250) {
+      if (scrollY + windowHeight >= fullHeight - 280) {
         setIsVisible(false);
       } else {
         setIsVisible(true);
@@ -25,11 +25,11 @@ export const ProductOrderButton = ({ state, mode = 'inplace', onClick }) => {
   }, []);
 
   const baseClasses =
-    'bg-black text-white py-3 rounded-lg text-center text-base transition-all duration-130 transform';
+    'bg-black text-white py-3.5 rounded-4xl text-center text-base transition-all duration-130 transform';
 
   const variantClasses =
     mode === 'fixed'
-      ? `fixed bottom-3 left-5 right-5 z-50 shadow-lg ${
+      ? `fixed bottom-5 left-5 right-5 z-50 shadow-lg ${
           isVisible
             ? 'opacity-100 translate-y-0'
             : 'opacity-0 translate-y-8 pointer-events-none'
@@ -45,7 +45,7 @@ export const ProductOrderButton = ({ state, mode = 'inplace', onClick }) => {
       <Button
         onClick={onClick}
         disabled={state}
-        className={`${baseClasses} ${variantClasses} py-6`}
+        className={`${baseClasses} ${variantClasses}`}
       >
         <Forward size={21} />
         заказать

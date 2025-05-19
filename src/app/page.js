@@ -17,39 +17,34 @@ export default function Home() {
 
       {/* линейка */}
       <div className='px-5 mt-5'>
-        {/* заголовок */}
-        <div className='mb-2'>
-          <h1 className='font-medium text-2xl'>новинки</h1>
-        </div>
-
         {/* товары */}
         <div className='grid grid-cols-2 gap-x-2 gap-y-4'>
           <ProductCard data={products} />
         </div>
 
-        <div className='flex flex-col gap-2 mt-5'>
-          <p className='font-medium text-2xl'>почему мы?</p>
-          <div className='flex flex-col gap-2'>
-            <div className='flex flex-col gap-0.5 p-4 border border-neutral-300 rounded-md'>
-              <p className='font-medium leading-5'>💸 разумная цена</p>
+        <div className='flex flex-col gap-2 mt-6'>
+          <p className='font-medium text-xl'>Почему мы?</p>
+          <div className='flex flex-col gap-3'>
+            <div className='flex flex-col gap-0.5 p-5 bg-white shadow-xs rounded-xl'>
+              <p className='font-medium leading-5'>💸 Разумная цена</p>
               <p className='text-sm text-neutral-500'>
-                не экономим, а продумываем: благодаря логистике и отбору — фикс,
+                Не экономим, а продумываем: благодаря логистике и отбору — фикс,
                 который реально стоит своих денег
               </p>
             </div>
-            <div className='flex flex-col gap-0.5 p-4 border border-neutral-300 rounded-md'>
+            <div className='flex flex-col gap-0.5 p-5 bg-white shadow-xs rounded-xl'>
               <p className='font-medium leading-5'>
-                ✅ контроль на каждом этапе
+                ✅ Контроль на каждом этапе
               </p>
               <p className='text-sm text-neutral-500'>
-                следим за фиксом с момента заказа — проверяем состояние,
+                Следим за фиксом с момента заказа — проверяем состояние,
                 упаковку, доставку
               </p>
             </div>
-            <div className='flex flex-col gap-0.5 p-4 border border-neutral-300 rounded-md'>
-              <p className='font-medium leading-5'>📦 дальше — лучше</p>
+            <div className='flex flex-col gap-0.5 p-5 bg-white shadow-xs rounded-xl'>
+              <p className='font-medium leading-5'>📦 Дальше — лучше</p>
               <p className='text-sm text-neutral-500'>
-                сейчас предзаказ, но скоро будет наличие и быстрая доставка
+                Сейчас предзаказ, но скоро будет наличие и быстрая доставка
               </p>
             </div>
           </div>
