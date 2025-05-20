@@ -48,7 +48,7 @@ export const ProductOrderButton = ({ state, mode = 'inplace', onClick }) => {
         className={`${baseClasses} ${variantClasses}`}
       >
         <Forward size={21} />
-        заказать
+        Заказать
       </Button>
     </>
   );

@@ -15,7 +15,7 @@ export const metadata = {
 export default function FaqPage() {
   return (
     <div className='flex flex-col gap-2 px-5 mt-5'>
-      <p className='text-2xl font-medium'>вопросы и ответы / faq</p>
+      <p className='text-2xl font-medium'>Вопросы и ответы</p>
       {/* Accordions */}
       <ReusableAccordionTemplate>
         {/* Информационные текста */}

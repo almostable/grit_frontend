@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
           Google Analytics —{' '}
           <a
             href='https://policies.google.com/privacy'
-            className='text-blue-600 underline'
+            className='text-blue-500 underline'
             target='_blank'
           >
             подробнее о политике Google
@@ -48,7 +48,7 @@ export default function PrivacyPolicyPage() {
           Яндекс.Метрика —{' '}
           <a
             href='https://yandex.ru/legal/confidential/'
-            className='text-blue-600 underline'
+            className='text-blue-500 underline'
             target='_blank'
           >
             подробнее о политике Яндекса
@@ -81,7 +81,7 @@ export default function PrivacyPolicyPage() {
       <p className='mt-10 text-sm text-neutral-600'>
         Если у вас остались вопросы по конфиденциальности — свяжитесь с нами по
         email:{' '}
-        <a href='mailto:diasuses@proton.me' className='text-blue-600 underline'>
+        <a href='mailto:diasuses@proton.me' className='text-blue-500 underline'>
           diasuses@proton.me
         </a>
       </p>

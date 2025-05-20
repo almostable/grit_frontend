@@ -8,7 +8,7 @@ import {
 
 export function ReusableAccordionItem({
   index,
-  label = 'характеристики',
+  label = 'Характеристики',
   labelClassname,
   content,
 }) {

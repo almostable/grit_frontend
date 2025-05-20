@@ -13,17 +13,20 @@ const geist = Geist({
 export const metadata = {
   metadataBase: new URL('https://weel.kz'),
   title: {
-    default: 'weel.kz — все про фиксы и многое',
-    template: '%s в weel.kz',
+    default:
+      'Фиксы и стильные аксессуары для уверенной и безопасной катки — Weel.kz',
+    template: '%s в Weel',
   },
-  description: 'Покупай фиксы, кастом и другое — удобно и дешево.',
+  description:
+    'Онлайн-магазин фиксированных велосипедов и аксессуаров: шлемы, перчатки, стрепы и всё, что нужно для комфортной и безопасной езды. Катай со стилем на Weel.kz.',
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
   },
   openGraph: {
-    title: 'weel.kz',
-    description: 'Лучшие фиксы и многое в weel.kz',
+    title: 'Фиксы и экип для стильных и безопасных каток — Weel.kz',
+    description:
+      'Стильные фиксы и экипировка для безопасности и комфорта на катке. Твой лучший выбор для катки — Weel.kz.',
     url: 'https://weel.kz',
     siteName: 'weel.kz',
     images: [

@@ -113,7 +113,7 @@ export default function ProductPage() {
           {product?.colors?.length > 0 && (
             <div className='flex flex-col gap-2'>
               <ProductOptions
-                label='цвет'
+                label='Цвет'
                 stateValue={selectedColor}
                 setStateValue={setSelectedColor}
                 data={product.colors}
@@ -130,7 +130,7 @@ export default function ProductPage() {
           {product?.sizes?.length > 0 && (
             <div className='flex flex-col gap-2'>
               <ProductOptions
-                label='размер рамы'
+                label='Размер рамы'
                 stateValue={selectedSize}
                 setStateValue={setSelectedSize}
                 data={product.sizes}
@@ -142,7 +142,7 @@ export default function ProductPage() {
           {product?.variations?.length > 0 && (
             <div className='flex flex-col gap-2'>
               <ProductOptions
-                label='шатуны'
+                label='Шатуны'
                 stateValue={selectedVariation}
                 setStateValue={setSelectedVariation}
                 data={product.variations}
@@ -154,7 +154,7 @@ export default function ProductPage() {
           {product?.tires?.length > 0 && (
             <div className='flex flex-col gap-2'>
               <ProductOptions
-                label='колеса'
+                label='Колеса'
                 stateValue={selectedTire}
                 setStateValue={setSelectedTire}
                 data={product.tires}
@@ -171,7 +171,7 @@ export default function ProductPage() {
           {product?.wheels?.length > 0 && (
             <div className='flex flex-col gap-2'>
               <ProductOptions
-                label='руль'
+                label='Руль'
                 stateValue={selectedWheels}
                 setStateValue={setSelectedWheels}
                 data={product.wheels}

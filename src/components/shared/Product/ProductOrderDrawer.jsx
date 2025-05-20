@@ -23,17 +23,17 @@ export function ProductOrderDrawer({
       <DrawerContent>
         <div className='flex flex-col px-5 pt-3 pb-7'>
           <div>
-            <p className='text-2xl font-medium'>ваш заказ</p>
+            <p className='text-2xl font-medium'>Ваш заказ</p>
             <div className='flex flex-col gap-1 mt-2'>
               {/* модель */}
               <div className='flex items-baseline gap-1'>
-                <p className='font-medium'>модель:</p>
+                <p className='font-medium'>Модель:</p>
                 <p className='text-sm'>{product}</p>
               </div>
 
               {/* цвет */}
               <div className='flex items-baseline gap-1'>
-                <p className='font-medium'>цвет:</p>
+                <p className='font-medium'>Цвет:</p>
                 <p
                   className={clsx(
                     'text-sm',
@@ -46,7 +46,7 @@ export function ProductOrderDrawer({
 
               {/* размер */}
               <div className='flex items-baseline gap-1'>
-                <p className='font-medium'>размер рамы:</p>
+                <p className='font-medium'>Размер рамы:</p>
                 <p
                   className={clsx(
                     'text-sm',
@@ -59,7 +59,7 @@ export function ProductOrderDrawer({
 
               {/* шатуны */}
               <div className='flex items-baseline gap-1'>
-                <p className='font-medium'>шатуны:</p>
+                <p className='font-medium'>Шатуны:</p>
                 <p
                   className={clsx(
                     'text-sm',
@@ -72,7 +72,7 @@ export function ProductOrderDrawer({
 
               {/* колеса */}
               <div className='flex items-baseline gap-1'>
-                <p className='font-medium'>колеса:</p>
+                <p className='font-medium'>Колеса:</p>
                 <p
                   className={clsx(
                     'text-sm',
@@ -85,7 +85,7 @@ export function ProductOrderDrawer({
 
               {/* руль */}
               <div className='flex items-baseline gap-1'>
-                <p className='font-medium'>руль:</p>
+                <p className='font-medium'>Руль:</p>
                 <p
                   className={clsx(
                     'text-sm',
@@ -109,12 +109,16 @@ export function ProductOrderDrawer({
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <Button className='w-full py-6'>
-                  <WhatsappLogo size={21} /> перейти в whatsapp
+                <Button className='w-full py-3 rounded-4xl'>
+                  <WhatsappLogo size={23} /> Перейти в WhatsApp
                 </Button>
               </a>
-              <Button onClick={close} variant='outline' className='w-full py-6'>
-                отменить
+              <Button
+                onClick={close}
+                variant='outline'
+                className='w-full py-3 rounded-4xl'
+              >
+                Отменить
               </Button>
             </div>
           </div>

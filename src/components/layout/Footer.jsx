@@ -10,16 +10,16 @@ export function Footer() {
         <GritLogo />
         <div className='flex flex-col gap-2'>
           <Link href='/faq' className=' text-sm text-neutral-400'>
-            вопрос — ответ
+            Доставка
           </Link>
           <Link href='/faq' className=' text-sm text-neutral-400'>
-            доставка
+            Возврат
           </Link>
           <Link href='/faq' className=' text-sm text-neutral-400'>
-            возврат
+            Чаво
           </Link>
           <Link href='/privacy' className=' text-sm text-neutral-400'>
-            политика
+            Политика
           </Link>
         </div>
         <div className='flex gap-5'>
