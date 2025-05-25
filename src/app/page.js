@@ -1,5 +1,6 @@
 'use client';
 
+import { ProductsWarning } from '@/components/layout/ProductsWarning';
 import { CategoryButtons } from '@/components/shared/Index/CategoryButtons';
 import { ProductCard } from '@/components/shared/Index/ProductCard';
 import { categories } from '@/data/categories';
@@ -49,6 +50,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <ProductsWarning />
       </div>
     </div>
   );

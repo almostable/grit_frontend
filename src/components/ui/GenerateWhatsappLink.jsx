@@ -7,7 +7,7 @@ export const GenerateWhatsappLink = ({
   wheels,
 }) => {
   const lines = [
-    'привет! хочу заказать велосипед:',
+    'Привет! Хочу заказать велосипед:',
     name && `— модель: ${name}`,
     color && `— цвет: ${color}`,
     size && `— размер рамы: ${size}`,
@@ -15,7 +15,7 @@ export const GenerateWhatsappLink = ({
     tire && `— колёса: ${tire}`,
     wheels && `— руль: ${wheels}`,
     ' ',
-    'подскажите, как оформить заказ?',
+    'Подскажите, как оформить заказ?',
   ];
 
   const message = lines.filter(Boolean).join('\n');

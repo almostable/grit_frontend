@@ -13,7 +13,7 @@ export const ProductOrderButton = ({ state, mode = 'inplace', onClick }) => {
       const windowHeight = window.innerHeight;
       const fullHeight = document.body.scrollHeight;
 
-      if (scrollY + windowHeight >= fullHeight - 280) {
+      if (scrollY + windowHeight >= fullHeight - 500) {
         setIsVisible(false);
       } else {
         setIsVisible(true);
@@ -29,7 +29,7 @@ export const ProductOrderButton = ({ state, mode = 'inplace', onClick }) => {
 
   const variantClasses =
     mode === 'fixed'
-      ? `fixed bottom-5 left-5 right-5 z-50 shadow-lg ${
+      ? `fixed bottom-5 left-5 right-5 z-50 shadow-lg max-w-[768px] m-auto ${
           isVisible
             ? 'opacity-100 translate-y-0'
             : 'opacity-0 translate-y-8 pointer-events-none'

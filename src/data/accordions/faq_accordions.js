@@ -12,7 +12,7 @@ export const faqAccordions = [
   {
     id: 3,
     name: 'Как оплатить?',
-    text: 'Легко: Kaspi Gold, Halyk Bank или любая Visa/MC карта.\n\nТы вносишь 80% при заказе, остальные 20% — при получении.',
+    text: 'Легко: Kaspi Gold, Halyk Bank или любая Visa/MC карта.',
   },
   {
     id: 4,

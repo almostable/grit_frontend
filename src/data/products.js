@@ -4,7 +4,6 @@ export const products = [
     category_id: 1,
     name: 'TSUNAMI SNM100',
     price: 139000,
-    old_price: 143000,
     sizes: [
       'S – 49 см (для роста 155–168 см)',
       'M – 52 см (для роста 168–178 см)',
@@ -90,6 +89,40 @@ export const products = [
       'https://res.cloudinary.com/dtkdoiowo/image/upload/v1747562433/5b844930-6860-43cf-93ca-01ca92286b0f_n4aq1u.jpg',
       'https://res.cloudinary.com/dtkdoiowo/image/upload/v1747562433/3c8758cd-0b3c-41b1-8845-ff5606392976_o5pj4r.jpg',
       'https://res.cloudinary.com/dtkdoiowo/image/upload/v1747562434/2412dc60-dd4c-4bcd-9092-7c0f5abbb562_erc38w.jpg',
+    ],
+  },
+  {
+    id: 'ardently_lite',
+    category_id: 1,
+    name: 'ARDENTLY LITE',
+    price: 153000,
+    sizes: [
+      'S – 50 см (для роста 155–165 см)',
+      'M – 52.5 см (для роста 165–175 см)',
+      'L – 55 см (для роста 175–185 см)',
+    ],
+    colors: [
+      'Белый с синим',
+      'Белый с красным (новый)',
+      'Серебристый с оранжевым',
+      'Бирюзовый с черным',
+      'Розовый с белым',
+      'Черный с белым',
+    ],
+    tires: ['Обода 30мм', 'Обода 40мм'],
+    wheels: ['Баранка', 'Прямой'],
+    description: [
+      'Фиксированная передача',
+      'Алюминиевая рама 6069, прочнее чем TSUNAMI SNM100',
+      'Вес 8-9кг',
+    ],
+    images: [
+      'https://res.cloudinary.com/dtkdoiowo/image/upload/v1748166818/photo_2025-05-25_14-24-03_aoazpl.jpg',
+      'https://res.cloudinary.com/dtkdoiowo/image/upload/v1748166855/photo_2025-05-25_14-24-05_ltud02.jpg',
+      'https://res.cloudinary.com/dtkdoiowo/image/upload/v1748166856/photo_2025-05-25_14-24-04_mv795y.jpg',
+      'https://res.cloudinary.com/dtkdoiowo/image/upload/v1748166856/photo_2025-05-25_14-52-29_ih4buk.jpg',
+      'https://res.cloudinary.com/dtkdoiowo/image/upload/v1748167110/photo_2025-05-25_14-58-10_dcr04j.jpg',
+      'https://res.cloudinary.com/dtkdoiowo/image/upload/v1748167110/photo_2025-05-25_14-58-09_iyx5dv.jpg',
     ],
   },
 ];

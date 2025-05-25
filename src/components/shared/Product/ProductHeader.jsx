@@ -1,8 +1,8 @@
 'use client';
 
 import { FutureDateButton } from '@/components/ui/FutureDateButton';
+import { MoneyAbstractLogo } from '@/components/ui/logo/MoneyAbstractLogo';
 import { TruckLogo } from '@/components/ui/logo/TruckLogo';
-import { CirclePercent } from 'lucide-react';
 
 export function ProductHeader({ data }) {
   return (
@@ -14,8 +14,8 @@ export function ProductHeader({ data }) {
           доставим до <FutureDateButton />
         </div>
         <div className='flex gap-1 max-w-fit px-2 py-1 items-center text-xs bg-blue-500/13 text-blue-500 rounded-md'>
-          <CirclePercent size={17} />
-          *предоплата 80%
+          <MoneyAbstractLogo size={17} />
+          предоплата 100%
         </div>
       </div>
     </>

@@ -1,5 +1,6 @@
 'use client';
 
+import { ProductsWarning } from '@/components/layout/ProductsWarning';
 import { ProductHeader } from '@/components/shared/Product/ProductHeader';
 import { ProductImageCarousel } from '@/components/shared/Product/ProductImageCarousel';
 import { ProductOptions } from '@/components/shared/Product/ProductOptions';
@@ -102,9 +103,12 @@ export default function ProductPage() {
         {/* Цена */}
         <div className='flex flex-col'>
           <ProductPrice data={product.price} old={product?.old_price} />
-          <p className='text-sm text-blue-500'>
-            * — предоплата от {roundedPrepay.toLocaleString('ru-RU')} ₸
+          <p className='text-xs text-neutral-500'>
+            цена меняется в зависимости от конфигурации
           </p>
+          {/* <p className='text-sm text-blue-500'>
+            * — предоплата от {roundedPrepay.toLocaleString('ru-RU')} ₸
+          </p> */}
         </div>
 
         {/* Разное */}
@@ -225,6 +229,9 @@ export default function ProductPage() {
         selectedWheels={selectedWheels}
         selectedTire={selectedTire}
       />
+      <div className='px-5'>
+        <ProductsWarning />
+      </div>
     </div>
   );
 }

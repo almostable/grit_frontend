@@ -8,7 +8,7 @@ import { Button } from '../ui/Button';
 
 export function Header() {
   return (
-    <div className='fixed w-full flex justify-between items-center px-5 py-3 bg-white/80 backdrop-blur-xs border-b-neutral-200'>
+    <div className='fixed w-full flex justify-between items-center px-5 py-3 bg-white/80 backdrop-blur-xs border-b-neutral-200 max-w-[768px]'>
       <HeaderBurger
         nav={categories.map((cat) => (
           <Link key={cat.id} href={`/category/${cat.slug}`}>

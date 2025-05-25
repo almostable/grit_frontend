@@ -52,7 +52,9 @@ export default function RootLayout({ children }) {
         <YandexMetrika />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </head>
-      <body className={`${geist.className} antialiased bg-neutral-100`}>
+      <body
+        className={`${geist.className} antialiased bg-neutral-100 max-w-[768px] m-auto`}
+      >
         <div className='flex flex-col min-h-screen'>
           <DesktopBlocker>
             <Header />

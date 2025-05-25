@@ -12,6 +12,6 @@ export const productAccordions = [
   {
     id: 3,
     name: 'Оплата',
-    text: 'Легко: Kaspi Gold, Halyk Bank или любая Visa/MC карта.\n\nТы вносишь 80% при заказе, остальные 20% — при получении.',
+    text: 'Легко: Kaspi Gold, Halyk Bank или любая Visa/MC карта.',
   },
 ];
