@@ -55,9 +55,9 @@ export const products = [
     ],
   },
   {
-    id: 'gray_f15',
+    id: 'gray_f10',
     category_id: 1,
-    name: 'GRAY F15',
+    name: 'GRAY F10',
     price: 142000,
     sizes: [
       'S – 48 см (для роста 158–170 см)',
